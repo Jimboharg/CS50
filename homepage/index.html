@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>My CS50 Webpage</title>
+    </head>
+    <body>
+        <img src="https://miro.medium.com/max/700/1*IYCifTCCR2ah-79u94Z3wg.png" alt="CS50 logo" width="700" height="350">
+        <h1>My CS50 Journey</h1>
+        <h2>From no coding experience to "some coding experience" :-)</h2>
+        <h3>A brief look at some of the problem sets.</h3>
+        <div><p class="container">I started Harvard's CS0 course almost three years ago.<br>
+            After several attempts and giving up several times, I finally decided to make a huge effort to finish the course in September 2022.<br>
+            The course consists of 11 weeks with each week having a lecture on a new subject and then a problet set - a series of challenges<br>
+            to test your knowledge and understanding of the concepts introduced each week.<br>
+            </p>
+        </div>
+        <div class="tiles">
+            <div class="tile" onclick="location.href='/mario.html';" style="cursor: pointer;">
+                <h4>Mario</h4>
+                <img src="https://image.smythstoys.com/picture/desktop/192020042.jpg" alt="CS50 logo" width="200" height="200">
+            </div>
+            <div class="tile" onclick="location.href='/caesar.html';" style="cursor: pointer;">
+                <h4>Caesar</h4>
+                <img src="https://i.pinimg.com/originals/ca/a4/ac/caa4ace52439c358117356bb9f7f8cad.png" alt="CS50 logo" width="150" height="200">
+            </div>
+            <div class="tile" onclick="location.href='/cash.html';" style="cursor: pointer;">
+                <h4>Cash</h4>
+                <img src="https://down.imgspng.com/download/0720/coin_PNG36881.png" alt="CS50 logo" width="200" height="200">
+            </div>
+        </div>
+            <h3>Check out problem sets from the other weeks ...</h3>
+        <form class="buttons">
+            <button type="button" id="decrease" class="btn btn-info">-</button>
+            <label id="week-number">Week 0</label>
+            <button type="button" id="increase" class="btn btn-info">+</button>
+            <button type="button" id="submit" class="btn btn-info">Submit</button><br>
+            <label id="output"></label>
+        </form>
+        <script src="index.js"></script>
+    </body>
+</html>
